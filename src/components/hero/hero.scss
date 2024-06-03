@@ -1,0 +1,28 @@
+.hero {
+    height: calc(100vh - 100px);
+    background: linear-gradient(180deg, lightblue, rgb(88, 88, 250));
+    overflow: hidden;
+    position: relative; /* Ensure .hero is a positioned container */
+
+   .wrapper{
+    max-width: 1366px;
+    height: 100%;
+    margin:auto;
+   }
+
+ .imageContainer {
+    height: 100%;
+    width:50%;
+    position: absolute;
+    top: 100px; /* Position it at the top */
+    right: 0px; /* Position it at the right */
+    
+    img {
+        width: 80%; /* Adjust width to 80% of the container */
+        object-fit: contain; /* Maintain aspect ratio */
+        margin-left: auto; /* Automatically calculate left margin to push image to the right */
+        display: block; /* Ensure image is treated as a block element for margin auto to work */
+    }
+
+}
+}
